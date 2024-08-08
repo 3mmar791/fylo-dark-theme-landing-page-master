@@ -37,7 +37,7 @@ header nav ul {
 }
 header nav ul li a {
   color: #979ea8;
-  padding: 10px;
+  /* padding: 10px; */
   margin-right: 20px;
   text-decoration: none;
 }
@@ -101,7 +101,8 @@ header nav ul li a:hover {
 
 section {
   background-color: #181f2b;
-  margin-top: -5px;
+  padding-top: 10px;
+  margin-top: -8px;
 }
 
 section .body-content {
@@ -329,14 +330,15 @@ footer img {
 
 .footer-container .location img {
   padding-right: 10px;
-  width: 20px;
   height: 20px;
 }
-.footer-container .social svg {
+/* .footer-container .social i {
   width: 30px;
   width: 30px;
   margin: 10px;
-}
+  color: white;
+  background-color: white;
+} */
 
 .phone {
   display: flex;
@@ -363,4 +365,76 @@ footer img {
 .about a:hover,
 .contact a:hover {
   font-weight: bold;
+}
+
+@media (max-width: 600px), (max-width: 900px) {
+  header nav img {
+    margin-left: 0;
+    width: 100px;
+  }
+  header nav ul li a {
+    padding: 5px;
+    margin-right: 5pxpx;
+  }
+  .content-header {
+    width: 80%;
+  }
+  .content-header p:nth-of-type(1),
+  .content-header p:nth-of-type(2) {
+    font-size: 19px;
+  }
+  .content-header p:nth-of-type(3) {
+    width: 100%;
+    font-size: 16px;
+  }
+  section {
+    padding-top: 10px;
+    margin-top: -8px;
+  }
+  .body-content {
+    flex-direction: column;
+  }
+  section .body-content div {
+    width: 100%;
+  }
+  section .productive {
+    flex-direction: column;
+    padding: 20px;
+  }
+  section .productive img,
+  section .productive div {
+    width: 100%;
+  }
+  section .portfolios {
+    flex-direction: column;
+    padding: 20px;
+  }
+  section .portfolios .parent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section .upperSection {
+    width: 100%;
+  }
+  section .upperSection div {
+    flex-direction: column;
+  }
+  section .upperSection div input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  section .upperSection div button {
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-container div {
+    width: 100%;
+  }
+  .footer-container .location {
+    width: 100%;
+  }
 }
