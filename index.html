@@ -157,7 +157,17 @@
           be happy to help you.
         </p>
         <div>
-          <input type="text" placeholder="email@example.com" />
+          <form action="" id="emailForm">
+            <label for="email"></label>
+            <input
+              type="text"
+              placeholder="email@example.com"
+              id="email"
+              name="email"
+              required
+            />
+            <p id="error-message" class="error"></p>
+          </form>
           <button type="submit">Get Started For Free</button>
         </div>
       </div>
